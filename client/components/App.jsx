@@ -1,16 +1,30 @@
 import React from 'react'
+import { HashRouter as Router, Route } from 'react-router-dom'
+
 import List from './List'
+import Button from './Sorted'
 
-const App = () => {
+
+const TestComp = () => {
   return (
-    <div className='main'>
-      <div className ='subDivLeft'></div>
-      <div className ='subDivRight'>
-      <List />
-      </div>
-
+    <div>
+      <h1>testComp</h1>
     </div>
   )
+}
+
+const App = () => {
+    return (
+      <Router>
+        <div>
+          <h1>Group Selector</h1>
+          <div>
+            <Route path="/" component={List} />
+            <Route path="/" component={Button}/>
+          </div>
+        </div>
+      </Router>
+    )
 }
 
 export default App
