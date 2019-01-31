@@ -15,3 +15,4 @@ const people = [
     { name: 'Cerys', image: 'cerys.jpg' },
     { name: 'Harry', image: 'harry.jpg' },
 ]
+export default people
