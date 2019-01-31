@@ -30,9 +30,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "superagent": "^4.0.0-beta.5"
-  },
-  "devDependencies": {
+    "superagent": "^4.0.0-beta.5",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
