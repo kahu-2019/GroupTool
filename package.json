@@ -10,7 +10,7 @@
     "client": "webpack-dev-server --hot --inline",
     "dev": "node server --watch",
     "server": "node server",
-    "start": "webpack --watch",
+    "start": "webpack && node server",
     "test": "jest --watchAll"
   },
   "babel": {
