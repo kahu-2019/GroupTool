@@ -7,7 +7,7 @@ const List = () => {
     var x = data.map(element => element.name)
     var randomIndex = Math.floor(Math.random() * x.length)
     return (
-        < div >
+        < div className = 'startList'>
             <ul>
                 {data.map(element => <li>{element.name}</li>)}
             </ul>

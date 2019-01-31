@@ -16,12 +16,27 @@ const TestComp = () => {
 const App = () => {
     return (
       <Router>
-        <div>
-          <h1>Group Selector</h1>
-          <div>
-            <Route path="/" component={List} />
-            <Route path="/" component={Button}/>
+        <div className = 'main'>
+          <div className = 'subDivLeft'>
+            <div>
+              <div>
+              <img className = 'logoImage' src='/images/devA.png'></img>
+              </div>
+              <div className = 'title'>
+                Kahu Group Picker
+              </div>
+              
           </div>
+        </div>
+          <div className = 'subDivRight'>
+            <div>
+            <Route path="/" component={List} />
+            </div>
+            <div>
+                <Route path="/" component={Button}/>
+            </div>
+          </div>
+
         </div>
       </Router>
     )
