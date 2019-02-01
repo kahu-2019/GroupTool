@@ -29,11 +29,12 @@ const App = () => {
           </div>
         </div>
           <div className = 'subDivRight'>
-            <div>
+            <div className = 'outline'>
             <Route path="/" component={List} />
+            <Route path="/" component={Button}/>
             </div>
             <div>
-                <Route path="/" component={Button}/>
+                
             </div>
           </div>
 
