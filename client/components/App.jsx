@@ -25,19 +25,19 @@ const App = () => {
               <div className = 'title'>
                 Kahu Group Picker
               </div>
-              
+              <Route path="/" component={Button}/>
           </div>
         </div>
           <div className = 'subDivRight'>
-            <div className = 'outline'>
+          
             <Route path="/" component={List} />
-            <Route path="/" component={Button}/>
-            </div>
+           
+          
             <div>
                 
             </div>
           </div>
-
+       
         </div>
       </Router>
     )

@@ -1,37 +1,4 @@
 const people = [
-<<<<<<< HEAD
-    {name: 'Alex', image: 'alex.png'},
-    {name: 'Arpo', image: 'arpo.jpg'},
-    {name: 'Cerys', image: 'cerys.jpg'},
-    {name: 'George', image: 'george.jpg'},
-    {name: 'Harry', image: 'harry.png'},
-    {name: 'Ishan', image: 'ishan.png'},
-    {name: 'James', image: 'james.png'},
-    {name: 'Karl', image: 'karl.png'},
-    {name: 'Katane', image: 'katane.png'},
-    {name: 'Miju', image: 'miju.png'},
-    {name: 'Nat', image: 'nat.jpg'},
-    {name: 'Ranjit', image: 'ranjit.png'},
-    {name: 'Rebecca', image: 'rebecca.jpg'},
-    {name: 'Richard', image: 'richard.png'},
-    {name: 'Sam', image: 'sam.png'}
-||||||| merged common ancestors
-    { name: 'Ranjit', image: 'ranjit.jpg' },
-    { name: 'Richard', image: 'richard.jpg' },
-    { name: 'Sam', image: 'sam.jpg' },
-    { name: 'Katane', image: 'katane.jpg' },
-    { name: 'Karl', image: 'karl.jpg' },
-    { name: 'Ishan', image: 'ishan.jpg' },
-    { name: 'Rebecca', image: 'rebecca.jpg' },
-    { name: 'Miju', image: 'miju.jpg' },
-    { name: 'Arpo', image: 'arpo.jpg' },
-    { name: 'Nat', image: 'nat.jpg' },
-    { name: 'Harry', image: 'harry.jpg' },
-    { name: 'George', image: 'george.jpg' },
-    { name: 'James', image: 'jamesjpg' },
-    { name: 'Cerys', image: 'cerys.jpg' },
-    { name: 'Harry', image: 'harry.jpg' },
-=======
     { name: 'Ranjit', image: 'images/ranjit.png' },
     { name: 'Richard', image: 'images/richard.png' },
     { name: 'Sam', image: 'images/sam.png' },
@@ -47,6 +14,5 @@ const people = [
     { name: 'James', image: 'images/james.png' },
     { name: 'Cerys', image: 'images/cerys.png' },
     { name: 'Alex', image: 'images/alex.png' },
->>>>>>> 222690673176a6d1c208f6b9e5c48cd725b9db74
 ]
 export default people
