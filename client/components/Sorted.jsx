@@ -38,8 +38,8 @@ const Group = () => {
     }
 
     return (
-        <div className="users">
-            {newArray.map((element, inc) => <div id={`user${inc}`}><p>{element.name}</p><img src={element.image} /></div>)}
+        <div className="newUsers">
+            {newArray.map((element, inc) => <div id={`newUser${inc}`}><p>{element.name}</p><img src={element.image} /></div>)}
         </div>
     )
 
