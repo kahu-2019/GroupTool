@@ -19,15 +19,17 @@ const Group = () => {
     return (
 
         < div >
-            {a.slice(0, 3)}
-            <br />
-            {a.slice(3, 6)}
-            <br />
-            {a.slice(6, 9)}
-            <br />
-            {a.slice(9, 12)}
-            <br />
-            {a.slice(12, 15)}
+            <ul>
+                {a.slice(0, 3)}
+                <br />
+                {a.slice(3, 6)}
+                <br />
+                {a.slice(6, 9)}
+                <br />
+                {a.slice(9, 12)}
+                <br />
+                {a.slice(12, 15)}
+            </ul>
             <br />
         </div >
     )
