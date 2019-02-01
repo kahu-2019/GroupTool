@@ -17,41 +17,35 @@ class Button extends React.Component {
         return (
             <div>
                 <button onClick={this.toggleIsHidden.bind(this)}>Made Groups</button>
-                {!this.state.isHidden && <Sorted />}
+                {!this.state.isHidden && <Group />}
             </div>
         )
     }
 }
 
-const Sorted = () => {
-    var x = data.map(element => element.name)
-    var randomIndex = Math.floor(Math.random() * x.length)
+function arrayRemoval(arr, val) {
+    return arr.filter(ele => ele != val)
+}
+
+const Group = () => {
+    var x = data.map(element => element)
+    const length = x.length
+    var newArray = []
+    for (var i = 1; i <= length; i++) {
+        var y = x[Math.floor(Math.random() * x.length)]
+        var x = arrayRemoval(x, y)
+        newArray.push(y)
+    }
+
     return (
-        < div >
-            <ul>
-                <li>{x[randomIndex]}</li>
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-                <br />
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-                <br />
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-                <br />
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-                <br />
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-                <li>{x[Math.floor(Math.random() * x.length)]}</li>
-            </ul>
+        <div className="users">
+            {newArray.map((element, inc) => <div id={`user${inc}`}><p>{element.name}</p><img src={element.image} /></div>)}
         </div>
     )
+
+
 }
+
 
 
 
