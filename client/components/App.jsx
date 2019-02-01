@@ -3,15 +3,7 @@ import { HashRouter as Router, Route } from 'react-router-dom'
 
 import List from './List'
 import Button from './Sorted'
-
-
-const TestComp = () => {
-  return (
-    <div>
-      <h1>testComp</h1>
-    </div>
-  )
-}
+import AddUser from './AddUser'
 
 const App = () => {
     return (
@@ -41,6 +33,8 @@ const App = () => {
       </Router>
     )
 }
+
+
 
 export default App
 
