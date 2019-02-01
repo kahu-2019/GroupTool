@@ -13,6 +13,6 @@ const people = [
     { name: 'George', image: 'george.jpg' },
     { name: 'James', image: 'jamesjpg' },
     { name: 'Cerys', image: 'cerys.jpg' },
-    { name: 'Harry', image: 'harry.jpg' },
+    { name: 'Alex', image: 'alex.jpg' },
 ]
 export default people
