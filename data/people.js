@@ -15,4 +15,5 @@ const people = [
     { name: 'Cerys', image: 'images/cerys.png' },
     { name: 'Alex', image: 'images/alex.png' },
 ]
-export default people
+
+export default people 

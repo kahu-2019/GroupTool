@@ -5,7 +5,7 @@ class Button extends React.Component {
     constructor() {
         super()
         this.state = {
-            isHidden: true
+            isHidden: true,
         }
     }
     toggleIsHidden () {
@@ -36,10 +36,18 @@ const Group = () => {
         var x = arrayRemoval(x, y)
         newArray.push(y)
     }
-
+    var a = newArray.map((element, inc) => <div id={`newUser${inc}`}><p>{element.name}</p><img src={element.image} /></div>)
     return (
         <div className="newUsers">
-            {newArray.map((element, inc) => <div id={`newUser${inc}`}><p>{element.name}</p><img src={element.image} /></div>)}
+           {a.slice(0, 3)}
+            <br />
+            {a.slice(3, 6)}
+            <br />
+            {a.slice(6, 9)}
+            <br />
+            {a.slice(9, 12)}
+            <br />
+            {a.slice(12, 15)}
         </div>
     )
 
