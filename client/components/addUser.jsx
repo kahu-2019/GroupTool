@@ -6,7 +6,7 @@ class AddUser extends React.Component {
       super(props);
       this.state = {
         name: '',
-        image: './imaginerylink'
+        image: 'images/user.png'
       };
   
       this.handleChange = this.handleChange.bind(this);
