@@ -14,18 +14,23 @@ const Group = () => {
         var x = arrayRemoval(x, y)
         newArray.push(y)
     }
+    var a = newArray.map(element => <li>{element}</li>)
 
     return (
-        <div>
-            <ul>
-                {newArray.map(element => <li>{element}</li>)}
-            </ul>
-        </div>
+
+        < div >
+            {a.slice(0, 3)}
+            <br />
+            {a.slice(3, 6)}
+            <br />
+            {a.slice(6, 9)}
+            <br />
+            {a.slice(9, 12)}
+            <br />
+            {a.slice(12, 15)}
+            <br />
+        </div >
     )
-
-
 }
-
-
 
 export default Group
