@@ -12,7 +12,7 @@ const List = () => {
             <div className='nameBox'>
                 <div className='faceDiv' id={`user${inc}`}>
                     <img className = 'faceImage' src={element.image} />
-                    </div>
+                </div>
                 <div className = 'nameDiv'>
                     {element.name} 
                 
