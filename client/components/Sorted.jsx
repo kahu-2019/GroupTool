@@ -36,15 +36,13 @@ const Group = () => {
         var x = arrayRemoval(x, y)
         newArray.push(y)
     }
-    var a = newArray.map((element, inc) => <div id={`newUser${inc}`}><p>{element.name}</p><img src={element.image} /></div>)
+    var a = newArray.map((element, inc) => <div className='nameBox' id={`newUser${inc}`}>
+    <div className= 'faceDiv'>
+        <img className='faceImage' src={element.image} />
+    </div>
+<div className = 'nameDiv'>{element.name}</div></div>)
     return (
-        <div className="newUsers">
-            {newArray.map((element, inc) => 
-            <div className='nameBox' id={`newUser${inc}`}>
-                <div className= 'faceDiv'>
-                    <img className='faceImage' src={element.image} />
-                </div>
-            <div className = 'nameDiv'>{element.name}</div></div>)}
+       <div>
            {a.slice(0, 3)}
             <br />
             {a.slice(3, 6)}
