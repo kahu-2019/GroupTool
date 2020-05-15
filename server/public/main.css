@@ -1,0 +1,113 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {background-color: rgb(36, 36, 36);}
+.main{
+    width: 900px;
+    /* height: 500px; */
+    margin: auto;
+    background-color: rgb(56, 56, 56);
+    margin-top: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center */
+
+}
+.subDivLeft {
+width:176px;
+border-style: solid;
+border-color: white;
+border-width: 2px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 20px;
+border-radius: 5px 0px 0px 5px
+/* justify-content: center; */
+
+}
+.subDivRight{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+
+
+}
+.nameBox {
+    height: 66px;
+    width: 200px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* box-shadow: 2px 2px lightgray; */
+    margin: 15px
+}
+.faceImage {
+    height: 60px;
+    border-radius: 50%;
+    background-color: 'white';
+    /* padding: 2px; */
+    margin-left: 4px;
+    margin-top: 4px
+
+}
+.logoImage {
+    height: 150px;
+    border-radius: 5px;
+    margin-left: 12px
+    
+}
+
+.faceDiv{
+    background-color: 'white';
+}
+.nameDiv{
+    align-items: center;
+    /* top: 50%; */
+    border-width: 1px;
+    font-size: 25px;
+    margin-left: 10px
+}
+.title{
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center
+
+}
+button {
+    background-color: #E94D3E;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size:12px;
+    margin-top: 15px
+}
+
+button:hover{
+    border-style: solid;
+    border-color: white;
+    border-width: 2px
+}
+
+button:active{
+    background-color: white
+}
+button:focus {outline:0;}
+
+.users{
+  /* height: 500px; */
+  /* display: flex; */
+}
+
+.outline{
+border-style: solid;
+border-color: red;
+border-width: 2px;
+padding: 10px;
+
+}
